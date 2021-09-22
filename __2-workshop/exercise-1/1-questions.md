@@ -107,6 +107,7 @@ html, head, body, img, ul (ol), lit, a, button, label, input
 
 
 ## Q4 - Can a `button` be a child of a `button`? Explain your reasoning
+No, buttons are not block elements, they are inline, so should not have child elements. Also likely doesn't make sense from a UI point of view, as it is clickable.
 
 ## Q5 - What is the most generic tag you can use?
 div
