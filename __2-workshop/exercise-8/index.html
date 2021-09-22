@@ -1,1 +1,64 @@
-<!-- ...crickets... -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Registration form</h1>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <label for="password">Password:</label>
+      <input type="text" id="password" name="password" required />
+      <label for="password">Email:</label>
+      <input type="text" id="email" name="email" required />
+
+      <h2>Which taxi do you require?</h2>
+      <input
+        type="radio"
+        id="car_radio"
+        name="car_radio"
+        value="Car"
+        required
+      />
+        <label for="car">Car</label>  
+      <input type="radio" id="van_radio" name="car_radio" value="Van" />
+        <label for="van">Van</label>  
+      <input type="radio" id="tuktuk_radio" name="car_radio" value="Tuk Tuk" />
+        <label for="tuktuk_radio">Tuk Tuk</label>
+
+      <h2>Choose your extras</h2>
+      <input type="checkbox" id="babyseat" name="babyseat" value="Baby seat" />
+      <label for="babyseat"> Baby seat</label>
+      <input
+        type="checkbox"
+        id="wheelchair"
+        name="wheelchair"
+        value="Wheelchair access"
+      />
+      <label for="wheelchair"> Wheelchair access</label>
+      <input
+        type="checkbox"
+        id="privacy"
+        name="privacy"
+        value="Privacy windows"
+      />
+      <label for="privacy"> Privacy windows</label>
+
+      <h2>Where would you like us to pick you up?</h2>
+      <select name="pickup" id="pickup">
+        <option value="place1">Place 1</option>
+        <option value="place2">Place 2</option>
+        <option value="place3">Place 3</option>
+      </select>
+      <h2>Additional Instructions</h2>
+      Special
+      <textarea
+        id="special"
+        name="special"
+        rows="4"
+        cols="50"
+        placeholder="Provide special instructions here."
+      ></textarea>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
